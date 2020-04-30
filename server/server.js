@@ -7,6 +7,7 @@ import sockjs from 'sockjs'
 
 import cookieParser from 'cookie-parser'
 import Html from '../client/html'
+import { currancy } from './api/currancy'
 
 let connections = []
 
@@ -20,6 +21,12 @@ server.use(bodyParser.urlencoded({ limit: '50mb', extended: true, parameterLimit
 server.use(bodyParser.json({ limit: '50mb', extended: true }))
 
 server.use(cookieParser())
+
+server.get('/api/v1/currancy/:country', (req, res) => {
+  const { country } = req.params
+  res.json(currancy(country))
+  res.end()
+})
 
 server.use('/api/', (req, res) => {
   res.status(404)
