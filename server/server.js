@@ -7,7 +7,8 @@ import sockjs from 'sockjs'
 
 import cookieParser from 'cookie-parser'
 import Html from '../client/html'
-import { currancy } from './api/currancy'
+import currancy from './api/banks/currancy'
+import { cronBanks } from './api/banks/update/cron'
 
 let connections = []
 
@@ -73,3 +74,6 @@ echo.installHandlers(app, { prefix: '/ws' })
 
 // eslint-disable-next-line no-console
 console.log(`Serving at http://localhost:${port}`)
+
+// start autoupdate banks
+cronBanks()
