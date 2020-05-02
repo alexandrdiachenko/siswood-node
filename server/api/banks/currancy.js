@@ -7,6 +7,8 @@ export default (country) => {
       return state.ua
     case 'RU':
       return state.ru
+    case 'PL':
+      return state.pl
     default:
       return state.ua
   }

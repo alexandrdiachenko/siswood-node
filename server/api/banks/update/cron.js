@@ -10,6 +10,6 @@ export const updateBanks = () => {
 }
 
 export const cronBanks = () => {
-   updateBanks() 
-  setInterval(updateBanks, 30000)
+  updateBanks() 
+  setInterval(updateBanks, 300000)
 }
