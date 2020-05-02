@@ -30,6 +30,7 @@ export default {
       cadOnly: 0,
       xauOnly: 0
     }
+<<<<<<< HEAD
   },
   ru: {
     sberbank: {
@@ -85,5 +86,7 @@ export default {
       sekSell: 0,
       sekBuy: 0
     }
+=======
+>>>>>>> 879e0df0880af72abd9c84219c142b1221432824
   }
 }
