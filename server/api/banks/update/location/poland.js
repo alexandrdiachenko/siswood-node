@@ -2,8 +2,7 @@ import { round, getResponse } from '../logic'
 import bankState from '../../bankState'
 
 const getNarodowybankpolskiPl = () => {
-  return getResponse(
-    'https://api.nbp.pl/api/exchangerates/tables/c/?format=json')
+  return getResponse('https://api.nbp.pl/api/exchangerates/tables/c/?format=json')
     .then((response) => {
       bankState.pl.narodowybankpolski.usdBuy = round(response[0].rates[0].bid)
       bankState.pl.narodowybankpolski.usdSell = round(response[0].rates[0].ask)
@@ -29,7 +28,6 @@ const getNarodowybankpolskiPl = () => {
       console.log('sberbank err : ', err.response.statusText, err.response.status)
     })
 }
-
 
 const getPoland = () => {
   getNarodowybankpolskiPl()

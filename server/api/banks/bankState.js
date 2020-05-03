@@ -1,36 +1,85 @@
 export default {
-  ua: {
-    privatbank: {
-      usdSell: 0,
-      usdBuy: 0,
-      eurSell: 0,
-      eurBuy: 0,
-      rurSell: 0,
-      rurBuy: 0
+  ua: [
+    {
+      name: 'PrivatBank',
+      currancy: [
+        {
+          name: 'USD',
+          USD: [0, 0]
+        },
+        {
+          name: 'EUR',
+          EUR: [0, 0]
+        },
+        {
+          name: 'RUR',
+          RUR: [0, 0]
+        }
+      ]
     },
-    monobank: {
-      usdSell: 0,
-      usdBuy: 0,
-      eurSell: 0,
-      eurBuy: 0,
-      rurSell: 0,
-      rurBuy: 0,
-      plnSell: 0,
-      plnBuy: 0
+    {
+      name: 'Monobank',
+      currancy: [
+        {
+          name: 'USD',
+          USD: [0, 0]
+        },
+        {
+          name: 'EUR',
+          EUR: [0, 0]
+        },
+        {
+          name: 'RUR',
+          RUR: [0, 0]
+        },
+        {
+          name: 'PLN',
+          PLN: [0, 0]
+        }
+      ]
     },
-
-    nationalbank: {
-      usdOnly: 0,
-      eurOnly: 0,
-      rurOnly: 0,
-      chfOnly: 0,
-      gbpOnly: 0,
-      plzOnly: 0,
-      sekOnly: 0,
-      cadOnly: 0,
-      xauOnly: 0
+    {
+      name: 'NationalBank',
+      currancy: [
+        {
+          name: 'USD',
+          USD: [0]
+        },
+        {
+          name: 'EUR',
+          EUR: [0]
+        },
+        {
+          name: 'RUR',
+          RUR: [0]
+        },
+        {
+          name: 'CHF',
+          CHF: [0]
+        },
+        {
+          name: 'GBP',
+          GBP: [0]
+        },
+        {
+          name: 'PLN',
+          PLN: [0]
+        },
+        {
+          name: 'SEK',
+          SEK: [0]
+        },
+        {
+          name: 'CAD',
+          CAD: [0]
+        },
+        {
+          name: 'XAU',
+          XAU: [0]
+        }
+      ]
     }
-  },
+  ],
   ru: {
     sberbank: {
       usdSell: 0,
