@@ -145,48 +145,48 @@ export default {
           name: 'SEK',
           SEK: [0, 0]
         }
-      ],
-      pln: [
+      ]
+    }
+  ],
+  pl: [
+    {
+      name: 'Narodowy Bank Polski',
+      currancy: [
         {
-          name: 'Narodowy Bank Polski',
-          currancy: [
-            {
-              name: 'USD',
-              USD: [0, 0]
-            },
-            {
-              name: 'AUD',
-              AUD: [0, 0]
-            },
-            {
-              name: 'CAD',
-              CAD: [0, 0]
-            },
-            {
-              name: 'EUR',
-              EUR: [0, 0]
-            },
-            {
-              name: 'HUF',
-              HUF: [0, 0]
-            },
-            {
-              name: 'CHF',
-              CHF: [0, 0]
-            },
-            {
-              name: 'DKK',
-              DKK: [0, 0]
-            },
-            {
-              name: 'NOK',
-              NOK: [0, 0]
-            },
-            {
-              name: 'SEK',
-              SEK: [0, 0]
-            }
-          ]
+          name: 'USD',
+          USD: [0, 0]
+        },
+        {
+          name: 'AUD',
+          AUD: [0, 0]
+        },
+        {
+          name: 'CAD',
+          CAD: [0, 0]
+        },
+        {
+          name: 'EUR',
+          EUR: [0, 0]
+        },
+        {
+          name: 'HUF',
+          HUF: [0, 0]
+        },
+        {
+          name: 'CHF',
+          CHF: [0, 0]
+        },
+        {
+          name: 'DKK',
+          DKK: [0, 0]
+        },
+        {
+          name: 'NOK',
+          NOK: [0, 0]
+        },
+        {
+          name: 'SEK',
+          SEK: [0, 0]
         }
       ]
     }
